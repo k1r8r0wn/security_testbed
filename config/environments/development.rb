@@ -71,7 +71,7 @@ Rails.application.configure do
   config.action_dispatch.default_headers = {
     'X-Frame-Options' => 'DENY'
   }
-  config.session_store :cookie_store, httponly: false
+  config.session_store :cookie_store, httponly: true
 
   config.hosts << "lvh.me"
 end
